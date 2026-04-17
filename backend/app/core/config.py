@@ -3,12 +3,12 @@ from typing import List
 
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "Recruitment Trend API"
+    PROJECT_NAME: str = "It Trend API"
     VERSION: str = "0.1.0"
     API_V1_STR: str = "/api/v1"
 
     # Database
-    DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost:5432/recruitment_db"
+    DATABASE_URL: str = "postgresql+asyncpg://user:password@localhost:5432/it_db"
 
     # Redis
     REDIS_URL: str = "redis://localhost:6379/0"

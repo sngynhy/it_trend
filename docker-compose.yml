@@ -4,7 +4,7 @@ services:
     environment:
       POSTGRES_USER: user
       POSTGRES_PASSWORD: password
-      POSTGRES_DB: recruitment_db
+      POSTGRES_DB: it_db
     ports:
       - "5432:5432"
     volumes:
@@ -23,7 +23,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=postgresql+asyncpg://user:password@postgres:5432/recruitment_db
+      - DATABASE_URL=postgresql+asyncpg://user:password@postgres:5432/it_db
       - REDIS_URL=redis://redis:6379/0
     depends_on:
       - postgres
@@ -35,7 +35,7 @@ services:
     volumes:
       - ./backend:/app
     environment:
-      - DATABASE_URL=postgresql+asyncpg://user:password@postgres:5432/recruitment_db
+      - DATABASE_URL=postgresql+asyncpg://user:password@postgres:5432/it_db
       - REDIS_URL=redis://redis:6379/0
     depends_on:
       - postgres

@@ -1,11 +1,11 @@
-# Recruitment Trend Analyzer
+# It Trend Analyzer
 
 채용 트렌드 분석 · 합격 예측 · 기업 추천 플랫폼
 
 ## 프로젝트 구조
 
 ```
-recruitment_trend/
+it_trend/
 ├── backend/          # FastAPI (Python)
 │   ├── app/
 │   │   ├── api/v1/endpoints/   # jobs · trends · resume · recommendations
@@ -31,9 +31,9 @@ recruitment_trend/
 
 ### 인프라
 
-PostgreSQL — 채용공고/분석 결과 저장
-Redis — 캐싱 + Celery 메시지 브로커
-Docker Compose — 로컬 개발 환경 통합 실행
+- PostgreSQL — 채용공고/분석 결과 저장
+- Redis — 캐싱 + Celery 메시지 브로커
+- Docker Compose — 로컬 개발 환경 통합 실행
 
 ## 빠른 시작
 
